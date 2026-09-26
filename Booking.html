@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Life Balance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Contact information bar -->
+        <div class="contact-information-bar">
+            <p>Email: hello@lifebalance.com</p>
+            <p>Phone: +44 0000 000 000</p>
+
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav>
+            <a href="index.html">Life Balance</a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="OurTopTips.html">Our Top Tips</a></li>
+                <li><a href="TheTeam.html">The Team</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Booking hero section -->
+        <section class="booking-hero">
+
+            <div class="booking-hero-content">
+                <h1>Booking</h1>
+
+            </div>
+
+            <div class="booking-hero-image">
+                <!-- Booking image will be added later -->
+            </div>
+
+        </section>
+
+
+        <!-- Booking form -->
+        <section class="booking-form-section">
+
+            <h2>Book a Session</h2>
+
+            <form>
+
+                <!-- Personal details -->
+                <fieldset>
+
+                    <legend>Personal Details</legend>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="date-of-birth">Date of Birth</label>
+                    <input type="date" id="date-of-birth" name="date-of-birth">
+
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation">
+
+                </fieldset>
+
+
+                <!-- Contact preferences -->
+                <fieldset>
+
+                    <legend>Contact Preferences</legend>
+
+                    <p>How would you prefer us to contact you?</p>
+
+                    <label>
+                        <input type="radio" name="contact-method" value="email">
+                        Email
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contact-method" value="phone">
+                        Phone
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contact-method" value="either">
+                        Either
+                    </label>
+
+                </fieldset>
+
+
+                <!-- Coach and service selection -->
+                <fieldset>
+
+                    <legend>Your Session</legend>
+
+                    <label for="coach">Choose a Mentor</label>
+
+                    <select id="coach" name="coach" required>
+                        <option value="">Please select</option>
+                        <option value="sophie">Sophie Bennett</option>
+                        <option value="james">James Carter</option>
+                        <option value="amelia">Amelia Hughes</option>
+                        <option value="daniel">Daniel Morgan</option>
+                    </select>
+
+
+                    <label for="service">Choose a Service</label>
+
+                    <select id="service" name="service" required>
+                        <option value="">Please select</option>
+                        <option value="career-development">
+                            Career Development
+                        </option>
+                        <option value="work-life-balance">
+                            Work-Life Balance
+                        </option>
+                        <option value="leadership-management">
+                            Leadership and Management
+                        </option>
+                        <option value="workplace-wellbeing">
+                            Wellbeing in the Workplace
+                        </option>
+                    </select>
+
+                </fieldset>
+
+
+                <!-- Preferred appointment -->
+                <fieldset>
+
+                    <legend>Preferred Appointment</legend>
+
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="alternative-date">
+                        Alternative Date
+                    </label>
+                    <input
+                        type="date"
+                        id="alternative-date"
+                        name="alternative-date">
+
+                    <label for="alternative-time">
+                        Alternative Time
+                    </label>
+                    <input
+                        type="time"
+                        id="alternative-time"
+                        name="alternative-time">
+
+                </fieldset>
+
+
+                <!-- Coaching background -->
+                <fieldset>
+
+                    <legend>About You</legend>
+
+                    <label for="coaching-experience">
+                        Have you had coaching before?
+                    </label>
+
+                    <select id="coaching-experience" name="coaching-experience">
+                        <option value="">Please select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+
+
+                    <label for="reason">
+                        What brings you to Life Balance?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="5"
+                        placeholder="Tell us a little about what you'd like support with.">
+                    </textarea>
+
+
+                    <label for="goals">
+                        What would you like to achieve through coaching?
+                    </label>
+
+                    <textarea
+                        id="goals"
+                        name="goals"
+                        rows="5"
+                        placeholder="Tell us about your goals.">
+                    </textarea>
+
+                </fieldset>
+
+
+                <!-- Additional information -->
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <label for="message">
+                        Is there anything else you'd like us to know?
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Optional">
+                    </textarea>
+
+                </fieldset>
+
+
+                <!-- Consent -->
+                <fieldset>
+
+                    <legend>Consent</legend>
+
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the Life Balance Terms &amp; Conditions.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="privacy" required>
+                        I have read and understood the Privacy Policy.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="contact-consent">
+                        I agree to be contacted about Life Balance services
+                        and future updates.
+                    </label>
+
+                </fieldset>
+
+
+                <!-- Submit booking -->
+                <button type="submit">Request Booking</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Contact prompt -->
+        <div class="contact-prompt">
+            <p>Still not sure? Any questions? Feel free to</p>
+            <a href="ContactUs.html">Contact Us &rightarrow;</a>
+        </div>
+
+        <!-- Footer links -->
+        <div class="footer-links">
+            <span>Privacy Policy</span>
+            <span>Terms &amp; Conditions</span>
+        </div>
+
+        <!-- Copyright information -->
+        <div class="footer-information">
+            <p>&copy; 2026 Life Balance. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
