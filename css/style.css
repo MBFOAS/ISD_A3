@@ -110,6 +110,7 @@ nav {
     align-items: center;
     padding: 20px 5%;
     background-color: #BFECAC;
+    border-bottom: 3px solid #003D20;
 }
 
 
@@ -142,4 +143,50 @@ nav ul li:last-child a {
     background-color: #003D20;
     color: #FFFFFF;
     border-radius: 20px;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+/* Contact prompt */
+.contact-prompt {
+    text-align: center;
+    padding: 30px 5%;
+    background-color: #BFECAC;
+}
+
+.contact-prompt p {
+    margin: 0 0 10px;
+}
+
+.contact-prompt a {
+    color: #003D20;
+    font-weight: 600;
+}
+
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 5%;
+
+    background-color: #003D20;
+    color: #FFFFFF;
+}
+
+
+/* Footer information */
+.footer-information {
+    text-align: center;
+    padding: 10px 5%;
+
+    background-color: #003D20;
+    color: #FFFFFF;
+}
+
+.footer-information p {
+    margin: 0;
 }
