@@ -72,20 +72,30 @@
 
                     <legend>Personal Details</legend>
 
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="form-field">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
 
-                    <label for="date-of-birth">Date of Birth</label>
-                    <input type="date" id="date-of-birth" name="date-of-birth">
+                    <div class="form-field">
+                        <label for="date-of-birth">Date of Birth</label>
+                        <input type="date" id="date-of-birth" name="date-of-birth">
+                    </div>
 
-                    <label for="occupation">Occupation</label>
-                    <input type="text" id="occupation" name="occupation">
+                    <div class="form-field">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
 
                 </fieldset>
 
@@ -97,20 +107,24 @@
 
                     <p>How would you prefer us to contact you?</p>
 
-                    <label>
-                        <input type="radio" name="contact-method" value="email">
-                        Email
-                    </label>
+                    <div class="radio-options">
 
-                    <label>
-                        <input type="radio" name="contact-method" value="phone">
-                        Phone
-                    </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="email">
+                            Email
+                        </label>
 
-                    <label>
-                        <input type="radio" name="contact-method" value="either">
-                        Either
-                    </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone">
+                            Phone
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contact-method" value="either">
+                            Either
+                        </label>
+
+                    </div>
 
                 </fieldset>
 
@@ -120,34 +134,37 @@
 
                     <legend>Your Session</legend>
 
-                    <label for="coach">Choose a Mentor</label>
+                    <div class="form-field">
+                        <label for="coach">Choose a Mentor</label>
 
-                    <select id="coach" name="coach" required>
-                        <option value="">Please select</option>
-                        <option value="sophie">Sophie Bennett</option>
-                        <option value="james">James Carter</option>
-                        <option value="amelia">Amelia Hughes</option>
-                        <option value="daniel">Daniel Morgan</option>
-                    </select>
+                        <select id="coach" name="coach" required>
+                            <option value="">Please select</option>
+                            <option value="sophie">Sophie Bennett</option>
+                            <option value="james">James Carter</option>
+                            <option value="amelia">Amelia Hughes</option>
+                            <option value="daniel">Daniel Morgan</option>
+                        </select>
+                    </div>
 
+                    <div class="form-field">
+                        <label for="service">Choose a Service</label>
 
-                    <label for="service">Choose a Service</label>
-
-                    <select id="service" name="service" required>
-                        <option value="">Please select</option>
-                        <option value="career-development">
-                            Career Development
-                        </option>
-                        <option value="work-life-balance">
-                            Work-Life Balance
-                        </option>
-                        <option value="leadership-management">
-                            Leadership and Management
-                        </option>
-                        <option value="workplace-wellbeing">
-                            Wellbeing in the Workplace
-                        </option>
-                    </select>
+                        <select id="service" name="service" required>
+                            <option value="">Please select</option>
+                            <option value="career-development">
+                                Career Development
+                            </option>
+                            <option value="work-life-balance">
+                                Work-Life Balance
+                            </option>
+                            <option value="leadership-management">
+                                Leadership and Management
+                            </option>
+                            <option value="workplace-wellbeing">
+                                Wellbeing in the Workplace
+                            </option>
+                        </select>
+                    </div>
 
                 </fieldset>
 
@@ -157,27 +174,31 @@
 
                     <legend>Preferred Appointment</legend>
 
-                    <label for="date">Preferred Date</label>
-                    <input type="date" id="date" name="date" required>
+                    <div class="form-field">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
 
-                    <label for="time">Preferred Time</label>
-                    <input type="time" id="time" name="time" required>
+                    <div class="form-field">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
 
-                    <label for="alternative-date">
-                        Alternative Date
-                    </label>
-                    <input
-                        type="date"
-                        id="alternative-date"
-                        name="alternative-date">
+                    <div class="form-field">
+                        <label for="alternative-date">Alternative Date</label>
+                        <input
+                            type="date"
+                            id="alternative-date"
+                            name="alternative-date">
+                    </div>
 
-                    <label for="alternative-time">
-                        Alternative Time
-                    </label>
-                    <input
-                        type="time"
-                        id="alternative-time"
-                        name="alternative-time">
+                    <div class="form-field">
+                        <label for="alternative-time">Alternative Time</label>
+                        <input
+                            type="time"
+                            id="alternative-time"
+                            name="alternative-time">
+                    </div>
 
                 </fieldset>
 
@@ -187,39 +208,41 @@
 
                     <legend>About You</legend>
 
-                    <label for="coaching-experience">
-                        Have you had coaching before?
-                    </label>
+                    <div class="form-field">
+                        <label for="coaching-experience">
+                            Have you had coaching before?
+                        </label>
 
-                    <select id="coaching-experience" name="coaching-experience">
-                        <option value="">Please select</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                        <select id="coaching-experience" name="coaching-experience">
+                            <option value="">Please select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
 
+                    <div class="form-field full-width">
+                        <label for="reason">
+                            What brings you to Life Balance?
+                        </label>
 
-                    <label for="reason">
-                        What brings you to Life Balance?
-                    </label>
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            rows="5"
+                            placeholder="Tell us a little about what you'd like support with."></textarea>
+                    </div>
 
-                    <textarea
-                        id="reason"
-                        name="reason"
-                        rows="5"
-                        placeholder="Tell us a little about what you'd like support with.">
-                    </textarea>
+                    <div class="form-field full-width">
+                        <label for="goals">
+                            What would you like to achieve through coaching?
+                        </label>
 
-
-                    <label for="goals">
-                        What would you like to achieve through coaching?
-                    </label>
-
-                    <textarea
-                        id="goals"
-                        name="goals"
-                        rows="5"
-                        placeholder="Tell us about your goals.">
-                    </textarea>
+                        <textarea
+                            id="goals"
+                            name="goals"
+                            rows="5"
+                            placeholder="Tell us about your goals."></textarea>
+                    </div>
 
                 </fieldset>
 
@@ -229,16 +252,17 @@
 
                     <legend>Additional Information</legend>
 
-                    <label for="message">
-                        Is there anything else you'd like us to know?
-                    </label>
+                    <div class="form-field full-width">
+                        <label for="message">
+                            Is there anything else you'd like us to know?
+                        </label>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Optional">
-                    </textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Optional"></textarea>
+                    </div>
 
                 </fieldset>
 
@@ -248,21 +272,25 @@
 
                     <legend>Consent</legend>
 
-                    <label>
-                        <input type="checkbox" name="terms" required>
-                        I agree to the Life Balance Terms &amp; Conditions.
-                    </label>
+                    <div class="checkbox-options">
 
-                    <label>
-                        <input type="checkbox" name="privacy" required>
-                        I have read and understood the Privacy Policy.
-                    </label>
+                        <label>
+                            <input type="checkbox" name="terms" required>
+                            I agree to the Life Balance Terms &amp; Conditions.
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="contact-consent">
-                        I agree to be contacted about Life Balance services
-                        and future updates.
-                    </label>
+                        <label>
+                            <input type="checkbox" name="privacy" required>
+                            I have read and understood the Privacy Policy.
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="contact-consent">
+                            I agree to be contacted about Life Balance services
+                            and future updates.
+                        </label>
+
+                    </div>
 
                 </fieldset>
 
@@ -271,7 +299,6 @@
                 <button type="submit">Request Booking</button>
 
             </form>
-
         </section>
 
     </main>

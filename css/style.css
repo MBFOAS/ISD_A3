@@ -729,3 +729,181 @@ nav ul li:last-child a {
     border-color: #FFD230;
     color: #003D20;
 }
+
+/* ========================================
+   Booking Page
+   ======================================== */
+
+/* Booking hero */
+.booking-hero {
+    display: flex;
+    min-height: 360px;
+}
+
+
+/* Booking hero content */
+.booking-hero-content {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+    padding: 60px 4%;
+
+    background-color: #003D20;
+    color: #FFFFFF;
+}
+
+
+/* Booking hero image */
+.booking-hero-image {
+    width: 60%;
+    min-height: 360px;
+
+    background-color: #FFFFFF;
+    border: 2px solid #003D20;
+}
+
+/* Booking form section */
+.booking-form-section {
+    padding: 50px 10%;
+    background-color: #BFECAC;
+}
+
+
+/* Booking form heading */
+.booking-form-section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* Booking form */
+.booking-form-section form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Form sections */
+.booking-form-section fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+
+    margin: 0 0 25px;
+    padding: 25px 30px;
+
+    border: 2px solid #003D20;
+    border-radius: 30px;
+
+    background-color: #FFFFFF;
+}
+
+
+/* Form section headings */
+.booking-form-section legend {
+    grid-column: 1 / -1;
+
+    padding: 0 10px;
+
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Form fields */
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Full-width fields */
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* Form labels */
+.form-field label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+
+/* Form controls */
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 2px solid #003D20;
+    border-radius: 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+/* Textarea */
+.form-field textarea {
+    resize: vertical;
+}
+
+
+/* Contact preference introduction */
+.booking-form-section fieldset > p {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+
+/* Radio options */
+.radio-options {
+    grid-column: 1 / -1;
+
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Radio and checkbox labels */
+.radio-options label,
+.checkbox-options label {
+    display: block;
+    font-weight: 400;
+}
+
+
+/* Consent options */
+.checkbox-options {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Submit button */
+.booking-form-section button {
+    display: block;
+
+    min-width: 180px;
+    margin: 10px auto 0;
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #FFD230;
+    color: #003D20;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
