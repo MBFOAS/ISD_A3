@@ -466,7 +466,7 @@ nav ul li:last-child a {
 }
 
 /* First step button */
-.booking-step:first-child a {
+.getting-started .booking-step:first-child a {
     background-color: #FFD230;
     border-color: #FFD230;
     color: #003D20;
