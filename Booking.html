@@ -68,233 +68,255 @@
             <form>
 
                 <!-- Personal details -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Personal Details</legend>
+                    <h3>Personal Details</h3>
+                    <fieldset>
 
-                    <div class="form-field">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                    <div class="form-field">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-                    <div class="form-field">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
 
-                    <div class="form-field">
-                        <label for="date-of-birth">Date of Birth</label>
-                        <input type="date" id="date-of-birth" name="date-of-birth">
-                    </div>
+                        <div class="form-field">
+                            <label for="date-of-birth">Date of Birth</label>
+                            <input type="date" id="date-of-birth" name="date-of-birth">
+                        </div>
 
-                    <div class="form-field">
-                        <label for="occupation">Occupation</label>
-                        <input type="text" id="occupation" name="occupation">
-                    </div>
+                        <div class="form-field">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" id="occupation" name="occupation">
+                        </div>
 
-                </fieldset>
+                    </fieldset>
 
+                </div>
 
                 <!-- Contact preferences -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Contact Preferences</legend>
+                    <h3>Contact Preferences</h3>
 
-                    <p>How would you prefer us to contact you?</p>
+                    <fieldset>
 
-                    <div class="radio-options">
+                        <p>How would you prefer us to contact you?</p>
 
-                        <label>
-                            <input type="radio" name="contact-method" value="email">
-                            Email
-                        </label>
+                        <div class="radio-options">
 
-                        <label>
-                            <input type="radio" name="contact-method" value="phone">
-                            Phone
-                        </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="email">
+                                Email
+                            </label>
 
-                        <label>
-                            <input type="radio" name="contact-method" value="either">
-                            Either
-                        </label>
+                            <label>
+                                <input type="radio" name="contact-method" value="phone">
+                                Phone
+                            </label>
 
-                    </div>
+                            <label>
+                                <input type="radio" name="contact-method" value="either">
+                                Either
+                            </label>
 
-                </fieldset>
+                        </div>
 
+                    </fieldset>
+                    
+                </div>
 
                 <!-- Coach and service selection -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Your Session</legend>
+                    <h3>Coach and Service Selections</h3>
 
-                    <div class="form-field">
-                        <label for="coach">Choose a Mentor</label>
+                    <fieldset>
 
-                        <select id="coach" name="coach" required>
-                            <option value="">Please select</option>
-                            <option value="sophie">Sophie Bennett</option>
-                            <option value="james">James Carter</option>
-                            <option value="amelia">Amelia Hughes</option>
-                            <option value="daniel">Daniel Morgan</option>
-                        </select>
-                    </div>
+                        <div class="form-field">
+                            <label for="coach">Choose a Mentor</label>
 
-                    <div class="form-field">
-                        <label for="service">Choose a Service</label>
+                            <select id="coach" name="coach" required>
+                                <option value="">Please select</option>
+                                <option value="sophie">Sophie Bennett</option>
+                                <option value="james">James Carter</option>
+                                <option value="amelia">Amelia Hughes</option>
+                                <option value="daniel">Daniel Morgan</option>
+                            </select>
+                        </div>
 
-                        <select id="service" name="service" required>
-                            <option value="">Please select</option>
-                            <option value="career-development">
-                                Career Development
-                            </option>
-                            <option value="work-life-balance">
-                                Work-Life Balance
-                            </option>
-                            <option value="leadership-management">
-                                Leadership and Management
-                            </option>
-                            <option value="workplace-wellbeing">
-                                Wellbeing in the Workplace
-                            </option>
-                        </select>
-                    </div>
+                        <div class="form-field">
+                            <label for="service">Choose a Service</label>
 
-                </fieldset>
+                            <select id="service" name="service" required>
+                                <option value="">Please select</option>
+                                <option value="career-development">
+                                    Career Development
+                                </option>
+                                <option value="work-life-balance">
+                                    Work-Life Balance
+                                </option>
+                                <option value="leadership-management">
+                                    Leadership and Management
+                                </option>
+                                <option value="workplace-wellbeing">
+                                    Wellbeing in the Workplace
+                                </option>
+                            </select>
+                        </div>
 
+                    </fieldset>
+
+                </div>
 
                 <!-- Preferred appointment -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Preferred Appointment</legend>
+                    <h3>Preferred Appointment</h3>
 
-                    <div class="form-field">
-                        <label for="date">Preferred Date</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
+                    <fieldset>
 
-                    <div class="form-field">
-                        <label for="time">Preferred Time</label>
-                        <input type="time" id="time" name="time" required>
-                    </div>
+                        <div class="form-field">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
 
-                    <div class="form-field">
-                        <label for="alternative-date">Alternative Date</label>
-                        <input
-                            type="date"
-                            id="alternative-date"
-                            name="alternative-date">
-                    </div>
+                        <div class="form-field">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
 
-                    <div class="form-field">
-                        <label for="alternative-time">Alternative Time</label>
-                        <input
-                            type="time"
-                            id="alternative-time"
-                            name="alternative-time">
-                    </div>
+                        <div class="form-field">
+                            <label for="alternative-date">Alternative Date</label>
+                            <input
+                                type="date"
+                                id="alternative-date"
+                                name="alternative-date">
+                        </div>
 
-                </fieldset>
+                        <div class="form-field">
+                            <label for="alternative-time">Alternative Time</label>
+                            <input
+                                type="time"
+                                id="alternative-time"
+                                name="alternative-time">
+                        </div>
 
+                    </fieldset>
+
+                </div>
 
                 <!-- Coaching background -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>About You</legend>
+                    <h3>Coaching Background</h3>
 
-                    <div class="form-field">
-                        <label for="coaching-experience">
-                            Have you had coaching before?
-                        </label>
+                    <fieldset>
 
-                        <select id="coaching-experience" name="coaching-experience">
-                            <option value="">Please select</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
+                        <div class="form-field">
+                            <label for="coaching-experience">
+                                Have you had coaching before?
+                            </label>
 
-                    <div class="form-field full-width">
-                        <label for="reason">
-                            What brings you to Life Balance?
-                        </label>
+                            <select id="coaching-experience" name="coaching-experience">
+                                <option value="">Please select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
 
-                        <textarea
-                            id="reason"
-                            name="reason"
-                            rows="5"
-                            placeholder="Tell us a little about what you'd like support with."></textarea>
-                    </div>
+                        <div class="form-field full-width">
+                            <label for="reason">
+                                What brings you to Life Balance?
+                            </label>
 
-                    <div class="form-field full-width">
-                        <label for="goals">
-                            What would you like to achieve through coaching?
-                        </label>
+                            <textarea
+                                id="reason"
+                                name="reason"
+                                rows="5"
+                                placeholder="Tell us a little about what you'd like support with."></textarea>
+                        </div>
 
-                        <textarea
-                            id="goals"
-                            name="goals"
-                            rows="5"
-                            placeholder="Tell us about your goals."></textarea>
-                    </div>
+                        <div class="form-field full-width">
+                            <label for="goals">
+                                What would you like to achieve through coaching?
+                            </label>
 
-                </fieldset>
+                            <textarea
+                                id="goals"
+                                name="goals"
+                                rows="5"
+                                placeholder="Tell us about your goals."></textarea>
+                        </div>
 
+                    </fieldset>
+
+                </div>
 
                 <!-- Additional information -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Additional Information</legend>
+                    <h3>Additional Information</h3>
 
-                    <div class="form-field full-width">
-                        <label for="message">
-                            Is there anything else you'd like us to know?
-                        </label>
+                    <fieldset>
 
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            placeholder="Optional"></textarea>
-                    </div>
+                    
+                        <div class="form-field full-width">
+                            <label for="message">
+                                Is there anything else you'd like us to know?
+                            </label>
 
-                </fieldset>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Optional"></textarea>
+                        </div>
 
+                    </fieldset>
+
+                </div>
 
                 <!-- Consent -->
-                <fieldset>
+                <div class="form-section">
 
-                    <legend>Consent</legend>
+                    <h3>Personal Details</h3>
 
-                    <div class="checkbox-options">
-
-                        <label>
-                            <input type="checkbox" name="terms" required>
-                            I agree to the Life Balance Terms &amp; Conditions.
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="privacy" required>
-                            I have read and understood the Privacy Policy.
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="contact-consent">
-                            I agree to be contacted about Life Balance services
-                            and future updates.
-                        </label>
-
-                    </div>
-
-                </fieldset>
+                    <fieldset>
 
 
+                        <div class="checkbox-options">
+
+                            <label>
+                                <input type="checkbox" name="terms" required>
+                                I agree to the Life Balance Terms &amp; Conditions.
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                I have read and understood the Privacy Policy.
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="contact-consent">
+                                I agree to be contacted about Life Balance services
+                                and future updates.
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+                
                 <!-- Submit booking -->
                 <button type="submit">Request Booking</button>
 
