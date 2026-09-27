@@ -446,6 +446,7 @@ nav ul li:last-child a {
     color: #BFECAC;
     font-size: 20px;
     align-items: center;
+    text-align: center;
 }
 
 
@@ -756,7 +757,6 @@ nav ul li:last-child a {
 .ready-to-get-started .booking-step {
     display: grid;
     grid-template-columns: 60px 1fr 190px;
-
     align-items: center;
     column-gap: 15px;
 }
@@ -804,6 +804,7 @@ nav ul li:last-child a {
     color: #BFECAC;
     font-size: 20px;
     align-items: center;
+    text-align: center;
 }
 
 
