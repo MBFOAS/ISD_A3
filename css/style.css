@@ -382,7 +382,7 @@ nav ul li:last-child a {
 
 /* Section heading */
 .getting-started h2 {
-    margin: 0 3% 20px;
+    margin: 0 6% 20px;
 }
 
 
@@ -391,7 +391,7 @@ nav ul li:last-child a {
     display: grid;
     grid-template-columns: 65% 35%;
 
-    margin: 0 3%;
+    margin: 0 6%;
     overflow: hidden;
 
     border: 3px solid #003D20;
@@ -660,7 +660,7 @@ nav ul li:last-child a {
 
 /* Section heading, now outside the panel */
 .pricing-and-booking-section h2 {
-    margin: 0 6% 25px;
+    margin: 0 8% 25px;
     text-align: left;
 }
 
@@ -669,7 +669,7 @@ nav ul li:last-child a {
     display: grid;
     grid-template-columns: 35% 65%;
 
-    margin: 0 6% 50px;
+    margin: 0 8% 50px;
 
     overflow: hidden;
 
