@@ -1090,3 +1090,225 @@ nav ul li:last-child a {
     color: #003D20;
     font-weight: 600;
 }
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Mobile Navigation */
+    nav {
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    nav ul {
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    /* Mobile Homepage Hero */
+    .hero {
+        flex-direction:column;
+        min-height:auto;
+    }
+
+    .hero-content,
+    .hero-image {
+        width:100%;
+    }
+
+    .hero-content {
+        padding:50px 8%;
+    }
+
+    .hero-image {
+        min-height:300px;
+    }
+
+    /* Mobile Mentor Cards */
+    .mentor-preview-cards {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .did-you-know {
+        grid-column:1 / -1;
+    }
+
+        /* Mobile Getting Started */
+    .getting-started-panel {
+        grid-template-columns:1fr;
+        margin:0;
+    }
+
+    .booking-step {
+        grid-template-columns:50px 1fr;
+        row-gap:10px;
+    }
+
+    .booking-step a {
+        grid-column:2;
+        width:100%;
+    }
+
+    .top-tips-preview {
+        padding:35px 25px;
+    }
+
+        /* Mobile Service Cards */
+    .service-cards {
+        grid-template-columns:1fr;
+        padding:20px 5% 40px;
+    }
+
+    .service-card {
+        grid-template-columns:30% 70%;
+        grid-template-rows:auto 1fr;
+        column-gap:20px;
+        text-align:left;
+    }
+
+    .service-image {
+        grid-column:1;
+        grid-row:1;
+        margin:0;
+    }
+
+    .service-card h3 {
+        grid-column:2;
+        grid-row:1;
+        min-height:auto;
+        text-align:left;
+        justify-content:flex-start;
+    }
+
+    .service-card > p {
+        grid-column:1;
+        grid-row:2;
+        align-items:flex-start;
+        justify-content:flex-start;
+        margin:20px 0 0;
+        text-align:left;
+    }
+
+    .service-card h4 {
+        grid-column:2;
+        grid-row:2;
+        align-items:flex-start;
+        justify-content:flex-start;
+        margin:20px 0 10px;
+        padding:0;
+        border-top:none;
+        text-align:left;
+    }
+
+    .service-card ul {
+        grid-column:2;
+        grid-row:2;
+        justify-content:flex-start;
+        margin:55px 0 0;
+        padding-left:20px;
+    }
+
+        /* Mobile Services Hero */
+    .services-hero {
+        flex-direction:column;
+        min-height:auto;
+    }
+
+    .services-hero-content,
+    .services-hero-image {
+        width:100%;
+    }
+
+    .services-hero-content {
+        padding:40px 8%;
+    }
+
+    .services-hero-image {
+        min-height:250px;
+    }
+
+        /* Mobile Pricing and Booking */
+    .pricing-and-booking {
+        grid-template-columns:1fr;
+        margin:0 5% 40px;
+    }
+
+    .session-prices {
+        padding:30px 25px;
+    }
+
+    .ready-to-get-started {
+        padding:35px 25px;
+    }
+
+    .ready-to-get-started .booking-step {
+        grid-template-columns:50px 1fr;
+        row-gap:10px;
+    }
+
+    .ready-to-get-started .booking-step a {
+        grid-column:2;
+        width:100%;
+    }
+
+        /* Mobile Booking Hero */
+    .booking-hero {
+        flex-direction:column;
+        min-height:auto;
+    }
+
+    .booking-hero-content,
+    .booking-hero-image {
+        width:100%;
+    }
+
+    .booking-hero-content {
+        padding:40px 8%;
+    }
+
+    .booking-hero-image {
+        min-height:250px;
+    }
+
+        /* Mobile Booking Form */
+    .booking-form-section {
+        padding:40px 5%;
+    }
+
+    .booking-form-section fieldset {
+        grid-template-columns:1fr;
+        padding:25px 20px;
+    }
+
+    .form-field.full-width {
+        grid-column:auto;
+    }
+
+    .radio-options {
+        flex-direction:column;
+        gap:10px;
+    }
+
+        /* Mobile Placeholder Pages */
+    .under-construction {
+        min-height:400px;
+        padding:40px 8%;
+    }
+
+        /* Mobile Footer */
+    .contact-prompt {
+        margin:20px 5%;
+        padding:30px 8%;
+    }
+
+    .footer-links {
+        flex-wrap:wrap;
+        gap:15px;
+    }
+}
