@@ -698,6 +698,10 @@ nav ul li:last-child a {
     margin-bottom: 25px;
 }
 
+/* Underline for pricing heading text */
+.pricing-heading h3 {
+    text-decoration: underline;
+}
 
 /* Price list */
 .price-list {
@@ -749,7 +753,7 @@ nav ul li:last-child a {
 /* Individual booking step */
 .ready-to-get-started .booking-step {
     display: grid;
-    grid-template-columns: 60px 1fr 190px;
+    grid-template-columns: 60px 220px 190px;
 
     align-items: center;
     column-gap: 15px;
