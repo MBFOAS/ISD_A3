@@ -413,7 +413,7 @@ nav ul li:last-child a {
 /* Individual booking step */
 .booking-step {
     display: grid;
-    grid-template-columns: 60px 220px 190px;
+    grid-template-columns: 60px 1fr 190px;
     align-items: center;
     column-gap: 15px;
 }
@@ -754,7 +754,7 @@ nav ul li:last-child a {
 /* Individual booking step */
 .ready-to-get-started .booking-step {
     display: grid;
-    grid-template-columns: 60px 220px 190px;
+    grid-template-columns: 60px 1fr 190px;
 
     align-items: center;
     column-gap: 15px;
@@ -802,6 +802,7 @@ nav ul li:last-child a {
 
     color: #BFECAC;
     font-size: 20px;
+    
 }
 
 
