@@ -666,6 +666,7 @@ nav ul li:last-child a {
 .pricing-and-booking {
     display: grid;
     grid-template-columns: 35% 65%;
+    align-items: start;
 
     margin: 0 6% 50px;
 
