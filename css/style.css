@@ -652,14 +652,14 @@ nav ul li:last-child a {
 
 /* Pricing and booking section wrapper */
 .pricing-and-booking-section {
-    padding: 50px 6% 0;
+    padding: 50px 0 0;
     background-color: #BFECAC;
 }
 
 /* Section heading, now outside the panel */
 .pricing-and-booking-section h2 {
     margin: 0 6% 25px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Main pricing and booking panel */
