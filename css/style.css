@@ -395,7 +395,7 @@ nav ul li:last-child a.active {
 
 /* Section heading */
 .getting-started h2 {
-    max-width:1200px;
+    max-width: 900px;
     margin:0 auto 20px;
 }
 
@@ -404,7 +404,7 @@ nav ul li:last-child a.active {
 .getting-started-panel {
     display:grid;
     grid-template-columns:65% 35%;
-    max-width:1200px;
+    max-width:900px;
     margin:0 auto;
     overflow:hidden;
     border:3px solid #003D20;
@@ -673,7 +673,7 @@ nav ul li:last-child a.active {
 
 /* Section heading, now outside the panel */
 .pricing-and-booking-section h2 {
-    max-width:1200px;
+    max-width:900px;
     margin:0 auto 25px;
     padding:0;
     text-align:left;
@@ -683,7 +683,7 @@ nav ul li:last-child a.active {
 .pricing-and-booking {
     display:grid;
     grid-template-columns:40% 60%;
-    max-width:1200px;
+    max-width:900px;
     margin:0 auto 50px;
     overflow:hidden;
     border:3px solid #003D20;
