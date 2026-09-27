@@ -9,6 +9,10 @@
    Global Reset
    ======================================== */
 
+   * {
+    box-sizing: border-box;
+}
+
 html,
 body {
     min-height: 100%;
@@ -129,7 +133,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
     background-color: #BFECAC;
     border-bottom: 3px solid #003D20;
 }
@@ -175,7 +179,7 @@ nav ul li:last-child a {
 
 /* Contact prompt */
 .contact-prompt {
-    padding: 35px 5%;
+    padding: 10px 5%;
 
     background-color: #BFECAC;
     border: 3px solid #003D20;
@@ -282,6 +286,7 @@ nav ul li:last-child a {
 /* Team preview heading */
 .team-preview h2 {
     text-align: right;
+    margin-bottom: 20px;
 }
 
 
@@ -377,7 +382,7 @@ nav ul li:last-child a {
 
 /* Section heading */
 .getting-started h2 {
-    margin-bottom: 20px;
+    margin: 0 3% 20px;
 }
 
 
@@ -513,7 +518,7 @@ nav ul li:last-child a {
 /* Services hero */
 .services-hero {
     display: flex;
-    min-height: 300px;
+    min-height: 250px;
 }
 
 
@@ -533,7 +538,7 @@ nav ul li:last-child a {
 /* Services hero image */
 .services-hero-image {
     width: 60%;
-    min-height: 360px;
+    min-height: 250px;
 
     background-color: #FFFFFF;
     border: 2px solid #003D20;
@@ -555,7 +560,7 @@ nav ul li:last-child a {
 }
 
 
-/* Service cards */
+/* Service cards container */
 .service-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -568,6 +573,9 @@ nav ul li:last-child a {
 
 /* Individual service card */
 .service-card {
+    display: grid;
+    grid-template-rows: 80px 70px 190px 55px 1fr;
+
     padding: 20px 18px 25px;
 
     background-color: #FFFFFF;
@@ -591,8 +599,11 @@ nav ul li:last-child a {
 
 /* Service card headings */
 .service-card h3 {
-    min-height: 70px;
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
 
     font-size: 26px;
 }
@@ -600,13 +611,21 @@ nav ul li:last-child a {
 
 /* Service card descriptions */
 .service-card > p {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
 }
 
 
 /* Service card subheadings */
 .service-card h4 {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
     padding-top: 15px;
 
     border-top: 2px solid #003D20;
@@ -615,6 +634,10 @@ nav ul li:last-child a {
 
 /* Service card lists */
 .service-card ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     margin: 0;
     padding-left: 20px;
 
@@ -627,7 +650,8 @@ nav ul li:last-child a {
     margin-bottom: 8px;
 }
 
-/* Pricing and booking panel */
+
+/* Main pricing and booking panel */
 .pricing-and-booking {
     display: grid;
     grid-template-columns: 35% 65%;
@@ -641,6 +665,7 @@ nav ul li:last-child a {
 
     background-color: #003D20;
 }
+
 
 
 /* Session prices */
@@ -687,40 +712,45 @@ nav ul li:last-child a {
     white-space: nowrap;
 }
 
+
+
 /* Ready to Get Started */
 .ready-to-get-started {
-    padding: 40px 5% 50px;
-    background-color: #BFECAC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 40px;
+
+    background-color: #003D20;
+    color: #BFECAC;
 }
 
 
 /* Ready to Get Started heading */
-.ready-to-get-started > h2 {
-    margin-bottom: 20px;
-    text-align: left;
-}
+.ready-to-get-started h2 {
+    margin-bottom: 25px;
 
-
-/* Ready to Get Started panel */
-.ready-to-get-started-panel {
-    background-color: #003D20;
-    border-radius: 35px;
-    padding: 30px 40px;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 
 /* Booking journey */
-.ready-to-get-started-panel .booking-journey {
+.ready-to-get-started .booking-journey {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
+
 
 /* Individual booking step */
 .ready-to-get-started .booking-step {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60px 1fr 190px;
+
     align-items: center;
-    gap: 15px;
+    column-gap: 15px;
 }
 
 
@@ -730,21 +760,21 @@ nav ul li:last-child a {
     justify-content: center;
     align-items: center;
 
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
     flex-shrink: 0;
 
-    border: 3px solid #BFECAC;
+    border: 4px solid #BFECAC;
     border-radius: 50%;
 
     color: #BFECAC;
     font-family: 'Lora', serif;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 
-/* Checkmarks for completed steps */
+/* Completed steps */
 .ready-to-get-started .booking-step:nth-child(1) .step-number,
 .ready-to-get-started .booking-step:nth-child(2) .step-number {
     font-size: 0;
@@ -761,9 +791,7 @@ nav ul li:last-child a {
 
 /* Step text */
 .ready-to-get-started .booking-step p {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    margin: 0;
 
     color: #BFECAC;
     font-size: 20px;
@@ -772,9 +800,11 @@ nav ul li:last-child a {
 
 /* Step links */
 .ready-to-get-started .booking-step a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    min-width: 220px;
+    width: 190px;
     padding: 7px 20px;
 
     border: 2px solid #BFECAC;
@@ -782,6 +812,7 @@ nav ul li:last-child a {
 
     color: #BFECAC;
     text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -799,7 +830,7 @@ nav ul li:last-child a {
 /* Booking hero */
 .booking-hero {
     display: flex;
-    min-height: 300px;
+    min-height: 250px;
 }
 
 
@@ -819,11 +850,25 @@ nav ul li:last-child a {
 /* Booking hero image */
 .booking-hero-image {
     width: 60%;
-    min-height: 360px;
+    min-height: 250px;
 
     background-color: #FFFFFF;
     border: 2px solid #003D20;
 }
+
+/* Booking form section */
+.booking-form-section {
+    padding: 50px 10%;
+    background-color: #BFECAC;
+}
+
+
+/* Booking form heading */
+.booking-form-section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 
 /* Booking form section */
 .booking-form-section {
@@ -847,9 +892,25 @@ nav ul li:last-child a {
 
 
 /* Form sections */
+.form-section {
+    margin-bottom: 25px;
+}
+
+
+/* Form section headings */
+.form-section h3 {
+    margin: 0 0 10px 20px;
+
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Form fieldsets */
 .booking-form-section fieldset {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px 25px;
 
     margin: 0;
@@ -862,21 +923,12 @@ nav ul li:last-child a {
 }
 
 
-.form-section {
-    margin-bottom: 25px;
-}
-
-.form-section h3 {
-    margin: 0 0 10px 20px;
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 /* Form fields */
 .form-field {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
     min-width: 0;
 }
 
@@ -898,7 +950,12 @@ nav ul li:last-child a {
 .form-field input,
 .form-field select,
 .form-field textarea {
+    display: block;
+
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
     padding: 10px 12px;
 
     border: 2px solid #003D20;
@@ -906,6 +963,13 @@ nav ul li:last-child a {
 
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+}
+
+
+/* Single-line controls */
+.form-field input,
+.form-field select {
+    height: 44px;
 }
 
 
