@@ -467,3 +467,265 @@ nav ul li:last-child a {
     color: #003D20;
     font-weight: 600;
 }
+
+/* ========================================
+   Services Page
+   ======================================== */
+
+/* Services hero */
+.services-hero {
+    display: flex;
+    min-height: 360px;
+}
+
+
+/* Services hero content */
+.services-hero-content {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+    padding: 60px 4%;
+
+    background-color: #003D20;
+    color: #FFFFFF;
+}
+
+
+/* Services hero image */
+.services-hero-image {
+    width: 60%;
+    min-height: 360px;
+
+    background-color: #FFFFFF;
+    border: 2px solid #003D20;
+}
+
+
+/* One-on-One Coaching */
+.one-on-one-coaching {
+    padding: 25px 5% 20px;
+    text-align: right;
+    background-color: #BFECAC;
+}
+
+
+/* Coaching introduction */
+.one-on-one-coaching p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+
+/* Service cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    padding: 20px 7% 50px;
+    background-color: #BFECAC;
+}
+
+
+/* Individual service card */
+.service-card {
+    min-height: 520px;
+    padding: 25px 18px;
+
+    background-color: #FFFFFF;
+    border: 3px solid #003D20;
+    border-radius: 45px;
+
+    text-align: center;
+}
+
+
+/* Service card headings */
+.service-card h3 {
+    min-height: 70px;
+    margin-bottom: 15px;
+
+    font-size: 26px;
+}
+
+
+/* Service card descriptions */
+.service-card > p {
+    margin-bottom: 20px;
+}
+
+
+/* Service card subheadings */
+.service-card h4 {
+    margin-bottom: 10px;
+    padding-top: 15px;
+
+    border-top: 2px solid #003D20;
+}
+
+
+/* Service card lists */
+.service-card ul {
+    margin: 0;
+    padding-left: 20px;
+
+    text-align: left;
+}
+
+
+/* Service card list items */
+.service-card li {
+    margin-bottom: 8px;
+}
+
+/* Pricing and booking panel */
+.pricing-and-booking {
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    margin: 0 6% 50px;
+
+    overflow: hidden;
+
+    border: 3px solid #003D20;
+    border-radius: 45px;
+
+    background-color: #003D20;
+}
+
+
+/* Session prices */
+.session-prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px;
+
+    background-color: #BFECAC;
+    color: #003D20;
+
+    text-align: center;
+}
+
+
+/* Session prices headings */
+.session-prices h2 {
+    margin-bottom: 5px;
+}
+
+
+.session-prices h3 {
+    margin-bottom: 25px;
+}
+
+
+/* Session price lines */
+.session-prices p {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+
+/* Ready to Get Started */
+.ready-to-get-started {
+    padding: 25px 35px;
+
+    background-color: #003D20;
+    color: #BFECAC;
+}
+
+
+/* Ready to Get Started heading */
+.ready-to-get-started h2 {
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Booking journey */
+.ready-to-get-started .booking-journey {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Individual booking step */
+.ready-to-get-started .booking-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Step numbers */
+.ready-to-get-started .step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border: 3px solid #BFECAC;
+    border-radius: 50%;
+
+    color: #BFECAC;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+}
+
+
+/* Checkmarks for completed steps */
+.ready-to-get-started .booking-step:nth-child(1) .step-number,
+.ready-to-get-started .booking-step:nth-child(2) .step-number {
+    font-size: 0;
+}
+
+
+.ready-to-get-started .booking-step:nth-child(1) .step-number::before,
+.ready-to-get-started .booking-step:nth-child(2) .step-number::before {
+    content: '✓';
+
+    font-size: 28px;
+}
+
+
+/* Step text */
+.ready-to-get-started .booking-step p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: #BFECAC;
+    font-size: 20px;
+}
+
+
+/* Step links */
+.ready-to-get-started .booking-step a {
+    display: inline-block;
+
+    min-width: 220px;
+    padding: 7px 20px;
+
+    border: 2px solid #BFECAC;
+    border-radius: 20px;
+
+    color: #BFECAC;
+    text-align: center;
+}
+
+
+/* Booking button */
+.ready-to-get-started .booking-step:last-child a {
+    background-color: #FFD230;
+    border-color: #FFD230;
+    color: #003D20;
+}
