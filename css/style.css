@@ -1096,6 +1096,23 @@ nav ul li:last-child a {
    ========================= */
 
 /* Large hero images */
+.hero-image {
+    width:60%;
+    height:500px;
+    background:#FFFFFF;
+    border:2px solid #003D20;
+    overflow:hidden;
+}
+
+.services-hero-image,
+.booking-hero-image {
+    width:60%;
+    height:300px;
+    background:#FFFFFF;
+    border:2px solid #003D20;
+    overflow:hidden;
+}
+
 .hero-image img,
 .services-hero-image img,
 .booking-hero-image img {
@@ -1161,7 +1178,7 @@ nav ul li:last-child a {
     }
 
     .hero-image {
-        min-height:300px;
+        height: 300px;
     }
 
     /* Mobile Mentor Cards */
@@ -1263,7 +1280,7 @@ nav ul li:last-child a {
     }
 
     .services-hero-image {
-        min-height:250px;
+        height: 250px;
     }
 
         /* Mobile Pricing and Booking */
@@ -1306,7 +1323,7 @@ nav ul li:last-child a {
     }
 
     .booking-hero-image {
-        min-height:250px;
+        height: 250px;
     }
 
         /* Mobile Booking Form */
