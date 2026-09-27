@@ -650,6 +650,17 @@ nav ul li:last-child a {
     margin-bottom: 8px;
 }
 
+/* Pricing and booking section wrapper */
+.pricing-and-booking-section {
+    padding: 50px 6% 0;
+    background-color: #BFECAC;
+}
+
+/* Section heading, now outside the panel */
+.pricing-and-booking-section h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
 
 /* Main pricing and booking panel */
 .pricing-and-booking {
@@ -724,15 +735,6 @@ nav ul li:last-child a {
 
     background-color: #003D20;
     color: #BFECAC;
-}
-
-
-/* Ready to Get Started heading */
-.ready-to-get-started h2 {
-    margin-bottom: 25px;
-
-    color: #FFFFFF;
-    text-align: center;
 }
 
 
