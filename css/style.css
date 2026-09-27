@@ -682,7 +682,7 @@ nav ul li:last-child a.active {
 /* Main pricing and booking panel */
 .pricing-and-booking {
     display:grid;
-    grid-template-columns:40% 60%;
+    grid-template-columns:35% 65%;
     max-width:900px;
     margin:0 auto 50px;
     overflow:hidden;
