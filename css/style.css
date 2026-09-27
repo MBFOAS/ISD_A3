@@ -1098,6 +1098,10 @@ nav ul li:last-child a {
 
 @media (max-width: 768px) {
 
+    /* Hide Contact Bar on Mobile */
+    .contact-information-bar {
+        display:none;
+    }
     /* Mobile Navigation */
     nav {
         flex-direction:column;
@@ -1187,7 +1191,7 @@ nav ul li:last-child a {
     }
 
     .service-card > p {
-        grid-column:1;
+        grid-column:2;
         grid-row:2;
         align-items:flex-start;
         justify-content:flex-start;
@@ -1196,7 +1200,7 @@ nav ul li:last-child a {
     }
 
     .service-card h4 {
-        grid-column:2;
+        grid-column:1;
         grid-row:2;
         align-items:flex-start;
         justify-content:flex-start;
@@ -1207,7 +1211,7 @@ nav ul li:last-child a {
     }
 
     .service-card ul {
-        grid-column:2;
+        grid-column:1;
         grid-row:2;
         justify-content:flex-start;
         margin:55px 0 0;
