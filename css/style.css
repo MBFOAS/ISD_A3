@@ -1091,6 +1091,36 @@ nav ul li:last-child a {
     font-weight: 600;
 }
 
+/* =========================
+   IMAGES
+   ========================= */
+
+/* Large hero images */
+.hero-image img,
+.services-hero-image img,
+.booking-hero-image img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Mentor images */
+.mentor-image img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* Service logos */
+.service-image img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
 
 /* =========================
    RESPONSIVE DESIGN
