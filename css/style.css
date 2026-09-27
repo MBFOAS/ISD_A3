@@ -907,3 +907,42 @@ nav ul li:last-child a {
 
     cursor: pointer;
 }
+
+/* ========================================
+   Under Construction Pages
+   ======================================== */
+
+/* Under construction section */
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 500px;
+    padding: 60px 10%;
+
+    background-color: #BFECAC;
+
+    text-align: center;
+}
+
+
+/* Under construction heading */
+.under-construction h1 {
+    margin-bottom: 20px;
+}
+
+
+/* Under construction text */
+.under-construction p {
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+
+
+/* Under construction links */
+.under-construction a {
+    color: #003D20;
+    font-weight: 600;
+}
