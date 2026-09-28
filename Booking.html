@@ -63,7 +63,7 @@
         <!-- Booking form -->
         <section class="booking-form-section">
 
-            <h2>Book a Session</h2>
+            <h2 id="booking-form-heading">Book a Session</h2>
 
             <form>
 
@@ -380,6 +380,7 @@
 
         <script>
         const bookingForm = document.querySelector(".booking-form-section form");
+        const bookingFormHeading = document.querySelector("#booking-form-heading");
         const bookingConfirmation = document.querySelector(".booking-confirmation");
         const newBookingButton = document.querySelector("#new-booking-button");
 
@@ -387,11 +388,13 @@
             event.preventDefault();
 
             bookingForm.hidden = true;
+            bookingFormHeading.hidden = true
             bookingConfirmation.hidden = false;
         });
 
         newBookingButton.addEventListener("click", function() {
             bookingConfirmation.hidden = true;
+            bookingFormHeading.hidden = false;
             bookingForm.hidden = false;
             bookingForm.reset();
         });
