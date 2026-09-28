@@ -321,6 +321,34 @@
                 <button type="submit">Request Booking</button>
 
             </form>
+            <div class="booking-confirmation" hidden>
+
+            <h2>Your booking form has been successfully submitted!</h2>
+
+            <p>
+                Thank you for getting in touch. We’ll be in touch shortly regarding
+                your booking request.
+            </p>
+
+            <div class="confirmation-options">
+
+                <div class="confirmation-tips">
+                    <h3>In the meantime…</h3>
+                    <p>
+                        Explore our tips and resources while you wait.
+                    </p>
+                    <a href="OurTopTips.html">Our Top Tips &rightarrow;</a>
+                </div>
+
+                <div class="confirmation-new-form">
+                    <button type="button" id="new-booking-button">
+                        Submit a new form &rightarrow;
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
         </section>
 
     </main>
@@ -349,6 +377,25 @@
         </div>
 
     </footer>
+
+        <script>
+        const bookingForm = document.querySelector(".booking-form-section form");
+        const bookingConfirmation = document.querySelector(".booking-confirmation");
+        const newBookingButton = document.querySelector("#new-booking-button");
+
+        bookingForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            bookingForm.hidden = true;
+            bookingConfirmation.hidden = false;
+        });
+
+        newBookingButton.addEventListener("click", function() {
+            bookingConfirmation.hidden = true;
+            bookingForm.hidden = false;
+            bookingForm.reset();
+        });
+    </script>
 
 </body>
 
